@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de tareas</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✦ Mis Tareas ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="aurora"></div>
+  <div class="aurora aurora2"></div>
+  <div class="grain"></div>
+
   <main class="app">
-    <h1>Mis tareas</h1>
-    <form id="form" class="form">
-      <input id="input" type="text" placeholder="Escribe una tarea..." autocomplete="off" required>
-      <button type="submit">Agregar</button>
+    <header class="hero">
+      <span class="badge">v0.1 · tu día, ordenado</span>
+      <h1 class="title">
+        <span class="word">Mis</span>
+        <span class="word glow">Tareas</span>
+      </h1>
+      <p class="subtitle">Escribe. Respira. Hazlas brillar.</p>
+    </header>
+
+    <form id="form" class="form" autocomplete="off">
+      <input id="input" class="input" type="text" placeholder="¿Qué quieres lograr hoy?" />
+      <button class="add" type="submit">
+        <span class="add-text">Añadir</span>
+        <span class="add-plus">+</span>
+      </button>
     </form>
+
     <ul id="list" class="list"></ul>
-    <p id="empty" class="empty">No hay tareas todavía.</p>
+
+    <div id="empty" class="empty">
+      <div class="empty-orb"></div>
+      <p>Todo despejado.<br />Añade tu primera chispa ✨</p>
+    </div>
   </main>
+
+  <footer class="foot">hecho con ⚡ y pixeles</footer>
+
   <script src="app.js"></script>
 </body>
 </html>
